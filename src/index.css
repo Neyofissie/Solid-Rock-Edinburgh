@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Requested Premium Palette */
+  --color-brand-primary: #0B5E3C;
+  --color-brand-secondary: #A9CBA2;
+  --color-brand-accent: #F7941D;
+  --color-brand-light: #F9F9F9;
+  --color-brand-white: #FFFFFF;
+}
+
+.bg-grid {
+  background-size: 64px 64px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
