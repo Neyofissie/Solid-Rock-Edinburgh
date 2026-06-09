@@ -11,10 +11,10 @@ export default function BlogPage() {
   return (
     <div className="relative w-full">
       {/* Blog Hero Section */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 lg:pt-40 lg:pb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <h1 className="text-6xl md:text-[80px] font-bold tracking-tight text-black mb-6 leading-[1.1]">
+            <h1 className="text-4xl md:text-6xl lg:text-[80px] font-bold tracking-tight text-black mb-6 leading-[1.1]">
               Blog & Update
             </h1>
             <p className="text-gray-600 text-lg leading-relaxed max-w-lg">
@@ -28,14 +28,14 @@ export default function BlogPage() {
             <img 
               src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" 
               alt="Person reading on tablet" 
-              className="w-full h-[400px] object-cover rounded-3xl"
+              className="w-full h-[300px] lg:h-[400px] object-cover rounded-3xl"
             />
           </div>
         </div>
       </section>
 
       {/* Blog Grid */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 pb-32">
+      <section className="relative z-10 max-w-7xl mx-auto px-6 pb-20 lg:pb-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
              <Link to={`/blog/${post.id}`} key={post.id} className="group cursor-pointer flex flex-col">

@@ -25,9 +25,9 @@ export default function BlogPostPage() {
   }
 
   return (
-    <div className="relative w-full pb-32">
+    <div className="relative w-full pb-16 md:pb-32">
       {/* Blog Post Header Info */}
-      <section className="relative z-10 max-w-4xl mx-auto px-6 pt-40 pb-12 text-center">
+      <section className="relative z-10 max-w-4xl mx-auto px-6 pt-32 md:pt-40 pb-8 md:pb-12 text-center">
         <Link 
           to="/blog" 
           className="inline-flex items-center text-brand-primary font-medium hover:text-green-800 transition-colors mb-8"
@@ -37,7 +37,7 @@ export default function BlogPostPage() {
         <div className="inline-block bg-brand-light px-4 py-1.5 rounded-full text-brand-primary text-sm font-semibold uppercase tracking-wider mb-6">
           {post.category}
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6 leading-tight">
           {post.title}
         </h1>
         <div className="text-gray-500 font-medium">
@@ -65,9 +65,9 @@ export default function BlogPostPage() {
 
       {/* Other Posts */}
       {otherPosts.length > 0 && (
-        <section className="relative z-10 max-w-7xl mx-auto px-6 mt-32">
-          <div className="border-t border-gray-100 pt-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-10">Read More</h2>
+        <section className="relative z-10 max-w-7xl mx-auto px-6 mt-16 md:mt-32">
+          <div className="border-t border-gray-100 pt-10 md:pt-16">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 mb-8 md:mb-10">Read More</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {otherPosts.map((relatedPost) => (
                 <Link to={`/blog/${relatedPost.id}`} key={relatedPost.id} className="group cursor-pointer flex flex-col">

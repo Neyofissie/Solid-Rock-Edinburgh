@@ -27,8 +27,8 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative z-10 pt-40 pb-16 px-6 max-w-5xl mx-auto text-center">
-        <h1 className="text-6xl md:text-[80px] font-bold text-black tracking-tight leading-[1.1] mb-6">
+      <section className="relative z-10 pt-32 md:pt-40 pb-12 md:pb-16 px-6 max-w-5xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl lg:text-[80px] font-bold text-black tracking-tight leading-[1.1] mb-6">
           Welcome to RCCG<br />Solid Rock , Edinburgh
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
@@ -85,33 +85,33 @@ export default function HomePage() {
 
       {/* Colored Info Blocks */}
       <section className="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3">
-        <a href="https://maps.google.com/?q=16-18+Queensferry+Rd,+Kirkliston+EH29+9AQ" target="_blank" rel="noopener noreferrer" className="bg-[#e57058] px-10 py-16 text-white flex flex-col justify-end min-h-[300px] hover:opacity-90 transition-opacity">
+        <a href="https://maps.google.com/?q=16-18+Queensferry+Rd,+Kirkliston+EH29+9AQ" target="_blank" rel="noopener noreferrer" className="bg-[#e57058] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-90 transition-opacity">
           <div className="mb-4">
-            <Coffee className="w-12 h-12" strokeWidth={1.5} />
+            <Coffee className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />
           </div>
-          <h3 className="text-4xl font-semibold -tracking-tight">Plan Your Visit</h3>
+          <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight">Plan Your Visit</h3>
         </a>
         
-        <a href="https://www.youtube.com/@SolidRockEdinburgh" target="_blank" rel="noopener noreferrer" className="bg-[#eaa03c] px-10 py-16 text-white flex flex-col justify-end min-h-[300px] hover:opacity-90 transition-opacity">
+        <a href="https://www.youtube.com/@SolidRockEdinburgh" target="_blank" rel="noopener noreferrer" className="bg-[#eaa03c] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-90 transition-opacity">
           <div className="mb-4">
-            <Home className="w-12 h-12" strokeWidth={1.5} />
+            <Home className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />
           </div>
-          <h3 className="text-4xl font-semibold -tracking-tight">Join Us Online</h3>
+          <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight">Join Us Online</h3>
         </a>
         
-        <a href="https://www.instagram.com/rccgsolidrockkirkliston/" target="_blank" rel="noopener noreferrer" className="bg-[#9ba1f6] px-10 py-16 text-white flex flex-col justify-end min-h-[300px] hover:opacity-90 transition-opacity">
+        <a href="https://www.instagram.com/rccgsolidrockkirkliston/" target="_blank" rel="noopener noreferrer" className="bg-[#9ba1f6] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-90 transition-opacity">
           <div className="mb-4">
-            <Users className="w-12 h-12" strokeWidth={1.5} />
+            <Users className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />
           </div>
-          <h3 className="text-4xl font-semibold -tracking-tight">Get Connected</h3>
+          <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight">Get Connected</h3>
         </a>
       </section>
 
       {/* Blog & Update */}
-      <section id="blog-preview" className="relative z-10 max-w-7xl mx-auto px-6 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section id="blog-preview" className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <h2 className="text-6xl font-bold tracking-tight text-black mb-6">Blog & Update</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-6">Blog & Update</h2>
             <p className="text-gray-600 text-lg leading-relaxed max-w-lg mb-8">
               Embark on a Journey of Discovery with Our Insightful Blog, and Stay 
               Connected with the Latest News and Developments — Where Insights, 
@@ -134,8 +134,8 @@ export default function HomePage() {
       </section>
 
       {/* Welcome Letter */}
-      <section id="welcome" className="relative z-10 bg-brand-light py-32 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+      <section id="welcome" className="relative z-10 bg-brand-light py-16 lg:py-32 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           <div className="text-black font-medium leading-[1.65] text-[17px] space-y-6">
             <p>Dear Beloved,<br />
             On behalf of The Redeemed Christian Church of God, Solid 
@@ -182,10 +182,10 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative z-10 max-w-7xl mx-auto px-6 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section id="contact" className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
-            <h2 className="text-6xl font-bold tracking-tight text-black mb-6">Contact us</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-6">Contact us</h2>
             <p className="text-gray-600 mb-10 max-w-md text-lg">
               Whether you're visiting for the first time, looking for prayer, or ready to 
               join a department, we're here to help. Reach out to us and a member of 
@@ -229,12 +229,12 @@ export default function HomePage() {
         </div>
         
         {/* Map Snippet Mock */}
-        <div className="mt-16 w-full max-w-[500px] bg-white border border-gray-100 rounded-2xl shadow-sm p-4 flex gap-4">
-           <div className="flex-1">
+        <div className="mt-16 w-full max-w-[500px] bg-white border border-gray-100 rounded-2xl shadow-sm p-4 flex flex-col sm:flex-row gap-4">
+           <div className="flex-1 text-center sm:text-left">
              <h4 className="font-bold text-gray-900 mb-1 leading-tight">RCCG Solid Rock<br/>Edinburgh</h4>
              <p className="text-gray-500 text-xs mt-2">16-18 Queensferry Rd, Kirkliston<br/>EH29 9AQ</p>
            </div>
-           <div className="flex flex-col justify-center gap-2">
+           <div className="flex sm:flex-col justify-center sm:justify-start gap-2 items-center">
               <a href="https://maps.google.com/?q=16-18+Queensferry+Rd,+Kirkliston+EH29+9AQ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-500 hover:bg-gray-50 transition-colors">
                  <ExternalLink className="w-4 h-4" />
               </a>
@@ -242,7 +242,7 @@ export default function HomePage() {
                  <CornerUpRight className="w-4 h-4" />
               </a>
            </div>
-           <div className="w-32 h-24 bg-gray-200 rounded-xl overflow-hidden flex items-center justify-center relative">
+           <div className="w-full sm:w-32 h-32 sm:h-24 bg-gray-200 rounded-xl overflow-hidden flex items-center justify-center relative mt-2 sm:mt-0">
              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=300&q=80" alt="map" className="absolute inset-0 w-full h-full object-cover opacity-60" />
              <MapPin className="relative z-10 w-6 h-6 text-red-500 drop-shadow-md" fill="currentColor"/>
            </div>
