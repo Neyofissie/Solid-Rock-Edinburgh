@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import rccgLogo from '../assets/images/Rccg_logo.png';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,10 +20,9 @@ export default function Navbar() {
             {/* Official RCCG Logo */}
             <div className="w-11 h-11 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center ring-2 ring-white shadow-md overflow-hidden relative">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/en/2/2a/Redeemed_Christian_Church_of_God_logo.png" 
+                src={rccgLogo} 
                 alt="RCCG Logo" 
                 className="w-full h-full object-contain p-0.5"
-                referrerPolicy="no-referrer"
               />
             </div>
             
