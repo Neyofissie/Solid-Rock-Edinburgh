@@ -106,8 +106,8 @@ export default function WatchLivePage() {
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black border border-gray-800 shadow-2xl">
               <iframe 
                 className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/live_stream?channel=SolidRockEdinburgh"
-                title="RCCG Solid Rock Edinburgh YouTube Channel Live Stream & Latest Video"
+                src="https://www.youtube-nocookie.com/embed/_6fi96KU8nA"
+                title="RCCG Solid Rock Edinburgh Live Stream - _6fi96KU8nA"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
@@ -116,15 +116,15 @@ export default function WatchLivePage() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-gray-400 px-1">
               <span className="flex items-center gap-2 text-gray-300">
                 <Radio className="w-4 h-4 text-red-500 animate-pulse flex-shrink-0" />
-                <span>Automatically plays the live broadcast or most recent video upload from our YouTube Channel.</span>
+                <span>Live stream broadcast: RCCG Solid Rock Edinburgh</span>
               </span>
               <a 
-                href="https://www.youtube.com/@SolidRockEdinburgh/streams" 
+                href="https://youtube.com/live/_6fi96KU8nA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1 transition-colors flex-shrink-0"
               >
-                <span>Full Broadcast History</span>
+                <span>Open in YouTube</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
