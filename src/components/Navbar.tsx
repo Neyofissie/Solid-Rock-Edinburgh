@@ -16,8 +16,124 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <div className="flex -space-x-2">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-primary flex items-center justify-center text-white text-xs md:text-sm font-bold ring-2 ring-white shadow-sm">RCCG</div>
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-900 flex items-center justify-center text-white text-xs md:text-sm font-bold ring-2 ring-white shadow-sm">SRP</div>
+            {/* Official RCCG Logo */}
+            <div className="w-11 h-11 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center ring-2 ring-white shadow-md overflow-hidden relative">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/2/2a/Redeemed_Christian_Church_of_God_logo.png" 
+                alt="RCCG Logo" 
+                className="w-full h-full object-contain p-0.5"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            
+            {/* Solid Rock Parish Lighthouse logo */}
+            <div className="w-11 h-11 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center ring-2 ring-white shadow-md overflow-hidden">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  {/* Metallic gold gradient for the outer bezel */}
+                  <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#78350f" />
+                    <stop offset="20%" stopColor="#f59e0b" />
+                    <stop offset="40%" stopColor="#fef08a" />
+                    <stop offset="60%" stopColor="#d97706" />
+                    <stop offset="80%" stopColor="#fef08a" />
+                    <stop offset="100%" stopColor="#78350f" />
+                  </linearGradient>
+                  {/* Soft background gradient */}
+                  <radialGradient id="darkBg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="#2c3540" />
+                    <stop offset="100%" stopColor="#11151c" />
+                  </radialGradient>
+                </defs>
+                
+                {/* Background base */}
+                <circle cx="50" cy="50" r="48" fill="url(#goldRim)" />
+                <circle cx="50" cy="50" r="42" fill="url(#darkBg)" />
+                
+                {/* Subtle dark grid ring for depth */}
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#78350f" strokeWidth="0.5" opacity="0.5" />
+                
+                {/* Light rays from lighthouse */}
+                <polygon points="26,30 10,24 10,36" fill="#fef08a" opacity="0.15" />
+                <polygon points="26,30 45,24 45,36" fill="#fef08a" opacity="0.1" />
+                
+                {/* Rock foundation at bottom-left */}
+                <path d="M14,64 Q22,62 31,67 L28,74 Q18,72 13,71 Z" fill="#475569" stroke="#334155" strokeWidth="0.5" />
+                <path d="M22,63 L28,67 L25,73 Z" fill="#334155" />
+                
+                {/* Lighthouse body tower */}
+                <path d="M21,63 L23,34 L27,34 L29,63 Z" fill="#ffffff" />
+                {/* Blue/black stripes */}
+                <path d="M21.9,50 L22.4,42 L27.6,42 L28.1,50 Z" fill="#1e293b" />
+                
+                {/* Light gallery chamber at top */}
+                <rect x="22" y="30" width="6" height="4" fill="#0f172a" rx="0.5" />
+                {/* Golden solid dome */}
+                <path d="M22,30 Q25,23 28,30 Z" fill="#d97706" stroke="#fbbf24" strokeWidth="0.5" />
+                {/* Glowing beacon */}
+                <circle cx="25" cy="32" r="1.5" fill="#fef08a" />
+                
+                {/* Text "Solid" */}
+                <text 
+                  x="36" 
+                  y="40" 
+                  fill="#ffffff" 
+                  fontSize="10px" 
+                  fontWeight="800" 
+                  fontFamily="system-ui, -apple-system, sans-serif"
+                  letterSpacing="0.25px"
+                >
+                  Solid
+                </text>
+                
+                {/* Text "ROCK" with the mini RCCG logo as the O */}
+                <text 
+                  x="36" 
+                  y="53" 
+                  fill="#ffffff" 
+                  fontSize="12.5px" 
+                  fontWeight="900" 
+                  fontFamily="system-ui, -apple-system, sans-serif"
+                  letterSpacing="0.2px"
+                >
+                  R
+                </text>
+                
+                {/* Tiny exact embedded RCCG emblem as the 'O' in "ROCK" */}
+                <image 
+                  href="https://upload.wikimedia.org/wikipedia/en/2/2a/Redeemed_Christian_Church_of_God_logo.png" 
+                  x="45.5" 
+                  y="42" 
+                  width="11" 
+                  height="11" 
+                />
+                
+                <text 
+                  x="58" 
+                  y="53" 
+                  fill="#ffffff" 
+                  fontSize="12.5px" 
+                  fontWeight="900" 
+                  fontFamily="system-ui, -apple-system, sans-serif"
+                  letterSpacing="0.2px"
+                >
+                  RK
+                </text>
+                
+                {/* Text "Parish" in cursive/gold serif */}
+                <text 
+                  x="36" 
+                  y="62" 
+                  fill="#f59e0b" 
+                  fontSize="8px" 
+                  fontStyle="italic" 
+                  fontFamily="Georgia, Cambria, serif"
+                  letterSpacing="0.3px"
+                >
+                  Parish
+                </text>
+              </svg>
+            </div>
           </div>
         </Link>
         
@@ -37,6 +153,10 @@ export default function Navbar() {
 
       {/* Desktop Links */}
       <div className="hidden md:flex items-center gap-8 text-[15px] font-medium text-gray-800">
+        <Link to="/watch-live" className="hover:text-brand-primary transition-colors flex items-center gap-1.5 font-semibold text-red-600 hover:text-red-700">
+          <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+          <span>Watch Live</span>
+        </Link>
         <Link to="/#welcome" className="hover:text-brand-primary transition-colors">Our Expression</Link>
         <Link to="/blog" className="hover:text-brand-primary transition-colors">Blog</Link>
         <Link to="/#volunteers" className="hover:text-brand-primary transition-colors">Volunteers</Link>
@@ -53,6 +173,10 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4 pb-4 animate-in slide-in-from-top-2 flex flex-col gap-4 text-center bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-gray-100 font-medium text-gray-800">
+          <Link to="/watch-live" className="hover:text-red-600 transition-colors py-2 text-red-600 font-bold flex items-center justify-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+            <span>Watch Live Stream</span>
+          </Link>
           <Link to="/#welcome" className="hover:text-brand-primary transition-colors py-2">Our Expression</Link>
           <Link to="/blog" className="hover:text-brand-primary transition-colors py-2">Blog</Link>
           <Link to="/#volunteers" className="hover:text-brand-primary transition-colors py-2">Volunteers</Link>

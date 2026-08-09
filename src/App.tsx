@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/Home';
 import BlogPage from './pages/Blog';
 import BlogPostPage from './pages/BlogPost';
+import WatchLivePage from './pages/WatchLive';
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -23,6 +24,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout><HomePage /></Layout>} />
+        <Route path="/watch-live" element={<Layout><WatchLivePage /></Layout>} />
+        <Route path="/live" element={<Layout><WatchLivePage /></Layout>} />
         <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
         <Route path="/blog/:id" element={<Layout><BlogPostPage /></Layout>} />
       </Routes>

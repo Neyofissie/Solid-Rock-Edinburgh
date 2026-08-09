@@ -1,6 +1,8 @@
 {
-  "name": "RCCG Solid Rock Parish Contact",
-  "description": "Contact Us page for RCCG Solid Rock Parish",
+  "name": "RCCG SOLID ROCK EDINBURGH",
+  "description": "RCCG Solid Rock Parish Edinburgh - Official Website",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

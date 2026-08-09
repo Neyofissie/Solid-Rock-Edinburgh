@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { Coffee, Home, Users, Smartphone, Mail, ExternalLink, CornerUpRight, MapPin } from 'lucide-react';
+import { Coffee, Home, Users, Smartphone, Mail, ExternalLink, CornerUpRight, MapPin, Youtube, Radio, Tv, Play } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import volunteer1Img from '../assets/images/regenerated_image_1778255172663.png';
 import volunteer2Img from '../assets/images/regenerated_image_1778255174528.png';
 import volunteer3Img from '../assets/images/regenerated_image_1778255176208.png';
 import volunteer4Img from '../assets/images/regenerated_image_1778255177689.png';
-import welcomeImg from '../assets/images/regenerated_image_1778255172081.jpg';
+import welcomeImg from '../assets/images/Pastor Sam.jpg';
 
 export default function HomePage() {
   const location = useLocation();
@@ -92,12 +92,16 @@ export default function HomePage() {
           <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight">Plan Your Visit</h3>
         </a>
         
-        <a href="https://www.youtube.com/@SolidRockEdinburgh" target="_blank" rel="noopener noreferrer" className="bg-[#eaa03c] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-90 transition-opacity">
-          <div className="mb-4">
-            <Home className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />
+        <Link to="/watch-live" className="bg-[#eaa03c] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-95 transition-opacity group">
+          <div className="mb-4 flex items-center justify-between">
+            <Youtube className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />
+            <span className="bg-white/20 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-white backdrop-blur-sm">
+              Watch Live
+            </span>
           </div>
-          <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight">Join Us Online</h3>
-        </a>
+          <h3 className="text-3xl md:text-4xl font-semibold -tracking-tight group-hover:translate-x-1 transition-transform">Join Us Online</h3>
+          <p className="text-xs text-amber-100 mt-2 font-medium">Watch live services & recent broadcasts &rarr;</p>
+        </Link>
         
         <a href="https://www.instagram.com/rccgsolidrockkirkliston/" target="_blank" rel="noopener noreferrer" className="bg-[#9ba1f6] px-6 py-12 md:px-10 md:py-16 text-white flex flex-col justify-end min-h-[250px] md:min-h-[300px] hover:opacity-90 transition-opacity">
           <div className="mb-4">
@@ -171,12 +175,22 @@ export default function HomePage() {
             Pastor Samuel ...</p>
           </div>
           
-          <div>
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg border border-gray-200/80 bg-white p-2.5 transition-all duration-300 hover:shadow-xl">
             <img 
               src={welcomeImg}
-              alt="Pastor" 
-              className="w-full h-auto object-cover rounded-3xl"
+              alt="Pastor Samuel - Resident Pastor, RCCG Solid Rock Edinburgh" 
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto max-h-[640px] object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-[1.01]"
+              width="800"
+              height="1066"
             />
+            <div className="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl border border-white/80 shadow-md flex items-center justify-between">
+              <div>
+                <p className="text-base font-bold text-gray-900 tracking-tight">Pastor Samuel</p>
+                <p className="text-xs text-brand-primary font-semibold">Resident Pastor, RCCG Solid Rock Edinburgh</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
