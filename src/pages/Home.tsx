@@ -53,28 +53,28 @@ export default function HomePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex flex-col">
-            <img src={volunteer1Img} alt="Choir Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
+            <img src={volunteer3Img} alt="Choir Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">Choir Department</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Our Choir Department is a joyful expression of worship, dedicated to glorifying God through music. We lead the congregation in heartfelt praise, blending traditional hymns with contemporary gospel to create a sound that lifts hearts and inspires faith.
             </p>
           </div>
           <div className="flex flex-col">
-            <img src={volunteer2Img} alt="Media Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
+            <img src={volunteer4Img} alt="Media Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">Media Department</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               The Media Department is committed to spreading the Gospel through creativity and technology. We support the church through live streaming, video production, graphic design, photography, and social media—making the Word accessible to people near and far.
             </p>
           </div>
           <div className="flex flex-col">
-            <img src={volunteer3Img} alt="Technical Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
+            <img src={volunteer2Img} alt="Technical Department" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">Technical Department</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Our Technical Department ensures every service runs smoothly—supporting audio, lighting, sound engineering, and live streaming systems. We work behind the scenes to create a worship environment where the Word is delivered with clarity and excellence.
             </p>
           </div>
           <div className="flex flex-col">
-            <img src={volunteer4Img} alt="Children's Church" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
+            <img src={volunteer1Img} alt="Children's Church" className="w-full h-[300px] object-cover rounded-3xl mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">Children's Church</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Children's Church is a fun, safe, and faith-filled environment where children learn about Jesus through engaging worship, interactive Bible lessons, songs, and creative activities. We are passionate about raising a generation rooted in Christ.
