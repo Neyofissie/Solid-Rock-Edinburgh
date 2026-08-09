@@ -29,6 +29,7 @@ export default function BlogPage() {
               src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" 
               alt="Person reading on tablet" 
               className="w-full h-[300px] lg:h-[400px] object-cover rounded-3xl"
+              referrerPolicy="no-referrer"
             />
           </div>
         </div>
@@ -44,6 +45,7 @@ export default function BlogPage() {
                    src={post.image} 
                    alt={post.title} 
                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   referrerPolicy="no-referrer"
                  />
                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-900 uppercase tracking-wider">
                    {post.category}

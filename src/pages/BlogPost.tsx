@@ -52,6 +52,7 @@ export default function BlogPostPage() {
             src={post.image} 
             alt={post.title} 
             className="absolute inset-0 w-full h-full object-cover"
+            referrerPolicy="no-referrer"
           />
         </div>
       </section>
@@ -76,6 +77,7 @@ export default function BlogPostPage() {
                       src={relatedPost.image} 
                       alt={relatedPost.title} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-900 uppercase tracking-wider">
                       {relatedPost.category}

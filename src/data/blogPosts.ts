@@ -64,7 +64,7 @@ Lord Jesus, I believe You are the Son of the living God. Thank You for saving me
     title: "Baptism: What It Means and Why It Matters",
     date: "May 1, 2026",
     category: "Discipleship",
-    image: "https://images.unsplash.com/photo-1507643801269-dd003e05bcde?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1438786657495-640937046d18?auto=format&fit=crop&w=800&q=80",
     excerpt: "Baptism is one of the clearest ways believers publicly declare their faith in Jesus. It is not a tradition for “perfect people.” It is a step of obedience.",
     content: `
 Baptism is one of the clearest ways believers publicly declare their faith in Jesus. It is not a tradition for “perfect people.” It is a step of obedience for anyone who has placed their trust in Christ.
