@@ -113,27 +113,17 @@ export default function HomePage() {
 
       {/* Blog & Update */}
       <section id="blog-preview" className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-6">Blog & Update</h2>
-            <p className="text-gray-600 text-lg leading-relaxed max-w-lg mb-8">
-              Embark on a Journey of Discovery with Our Insightful Blog, and Stay 
-              Connected with the Latest News and Developments — Where Insights, 
-              Inspiration, and Current Updates Converge for a Rich and Engaging 
-              Experience.
-            </p>
-            <Link to="/blog" className="inline-block bg-brand-primary text-white font-medium px-6 py-2.5 rounded hover:bg-green-800 transition-colors">
-              Read Our Blog
-            </Link>
-          </div>
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" 
-              alt="Blog reading" 
-              className="w-full h-[400px] object-cover rounded-3xl cursor-pointer"
-              onClick={() => window.location.href = '/blog'}
-            />
-          </div>
+        <div className="max-w-3xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-6">Blog & Update</h2>
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            Embark on a Journey of Discovery with Our Insightful Blog, and Stay 
+            Connected with the Latest News and Developments — Where Insights, 
+            Inspiration, and Current Updates Converge for a Rich and Engaging 
+            Experience.
+          </p>
+          <Link to="/blog" className="inline-block bg-brand-primary text-white font-medium px-6 py-2.5 rounded hover:bg-green-800 transition-colors">
+            Read Our Blog
+          </Link>
         </div>
       </section>
 
