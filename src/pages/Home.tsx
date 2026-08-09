@@ -203,33 +203,53 @@ export default function HomePage() {
               </div>
               <div className="bg-gray-100/80 flex items-center gap-3 px-6 py-4 rounded-xl font-medium text-black">
                 <Mail className="w-5 h-5 flex-shrink-0 text-black" />
-                <span className="truncate">solidrockedinburgh@gmail.com</span>
+                <span className="truncate">info@solidrockedinburgh.com</span>
               </div>
             </div>
           </div>
           
-          <div className="flex flex-col gap-4">
+          <form 
+            className="flex flex-col gap-4"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              const name = formData.get('name');
+              const email = formData.get('email');
+              const message = formData.get('message');
+              const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+              window.location.href = `mailto:info@solidrockedinburgh.com?subject=Contact Form Submission&body=${body}`;
+            }}
+          >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input 
                 type="text" 
+                name="name"
                 placeholder="Name" 
+                required
                 className="bg-gray-100 w-full px-6 py-4 rounded-xl outline-none focus:ring-2 focus:ring-brand-primary transition-all text-black"
               />
               <input 
                 type="email" 
+                name="email"
                 placeholder="Email" 
+                required
                 className="bg-gray-100 w-full px-6 py-4 rounded-xl outline-none focus:ring-2 focus:ring-brand-primary transition-all text-black"
               />
             </div>
             <textarea 
+              name="message"
               placeholder="Message" 
               rows={6}
+              required
               className="bg-gray-100 w-full px-6 py-4 rounded-xl outline-none focus:ring-2 focus:ring-brand-primary transition-all text-black resize-none"
             ></textarea>
-            <button className="bg-brand-primary text-white font-medium w-full py-4 rounded-xl hover:bg-[#084e31] transition-colors mt-2 text-lg">
+            <button 
+              type="submit"
+              className="bg-brand-primary text-white font-medium w-full py-4 rounded-xl hover:bg-[#084e31] transition-colors mt-2 text-lg"
+            >
               Send
             </button>
-          </div>
+          </form>
         </div>
         
         {/* Map Snippet Mock */}
